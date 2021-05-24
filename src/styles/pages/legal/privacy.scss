@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.privacy-page {
+  height: 100vh;
+  overflow: auto;
+
+  &.active {
+    .page-title {
+      top: 40px;
+      transition: .3s all ease-in;
+      font-size: 1.5rem;
+    }
+  }
+
+  .page-title {
+    position: absolute;
+    top: 20%;
+    z-index: 999;
+    transform: translateY(-50%);
+    font-size: 1.875rem;
+  }
+
+  h1 {
+    letter-spacing: 1px;
+  }
+
+  .wrapper {
+    margin: 0 30px;
+    max-width: 500px;
+  }
+
+  .desc {
+    letter-spacing: 1px;
+    font-size: .9rem;
+  }
+
+  .btn-allow-notifications {
+    border-radius: 26px;
+    border: 1px solid $sky-100;
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    max-width: 360px;
+  }
+}

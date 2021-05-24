@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115.556" height="105.278" viewBox="0 0 115.556 105.278" fill="none" stroke="#ffffff">
+    <line id="Line_Left" x2="25" y2="25" transform="translate(82.778 7.778)" stroke-linecap="round" stroke-width="11"/>
+    <line id="Line_Right" x1="25" y2="25" transform="translate(7.778 7.778)" stroke-linecap="round" stroke-width="11"/>
+    <g id="Ellipse" transform="translate(14.278 18.278)" stroke-width="11">
+        <circle cx="43.5" cy="43.5" r="38" fill="none"/>
+    </g>
+</svg>

@@ -1,0 +1,165 @@
+@import "@/styles/variables.scss";
+
+.alarm-page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.alarm-finish-page {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 0 25px;
+
+  &.toBottom {
+    animation: basic-animation 1s;
+    top: 0;
+  }
+  &.toUp {
+    animation: snooze-animation 1s;
+    top: 0;
+  }
+
+  .helper-text {
+    &.text-large {
+      color: $white-100;
+      font-weight: bold;
+      font-size: 1.5rem;
+      transition: .5s all ease;
+    }
+  }
+
+  &.finish {
+    background-color: $sky-100;
+    .clock {
+      margin-top: 50px;
+    }
+  }
+
+  .answer-questions {
+    color: $white-100;
+    margin-top: auto;
+    padding: 0 5rem;
+    font-size: 1rem;
+  }
+
+  .customize-btn {
+    background: $sky-200;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes snooze-animation {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0
+  }
+}
+
+@keyframes basic-animation {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0
+  }
+}
+.alarm-stop-page {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 0 25px;
+
+  &.loaded {
+    left: 0;
+    transition: .3s left ease-in;
+  }
+
+  .clock_desc {
+    width: 2rem;
+  }
+
+  .stop-alarm-wrapper {
+    min-width: 15rem;
+    max-width: 15rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid #333f5b;
+
+    .inner-wrapper {
+      min-width: 13.5rem;
+      max-width: 13.5rem;
+      min-height: 13.5rem;
+      max-height: 13.5rem;
+      background-color: #48CCE5;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 40px $blue-100;
+    }
+  }
+
+  .clock-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.active {
+    .clock_desc {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .clock-wrap {
+      transition: .5s all ease;
+    }
+
+    .stop-alarm-wrapper {
+      .stop-alarm-text {
+        color: #0f3355;
+        letter-spacing: 1px;
+      }
+    }
+    .edit_alarm {
+      margin-left: -600px;
+      transition: .5s margin-left ease-out;
+    }
+    .clock {
+      color: #48CCE5;
+    }
+  }
+  .clock {
+    font-size: 40px;
+    font-weight: 500;
+    width: 170px;
+    margin: .5rem auto 0;
+    padding: 2px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+      color: $white-100;
+    }
+  }
+  .clock__colon {
+    margin: -5px 10px 0 !important;
+  }
+}

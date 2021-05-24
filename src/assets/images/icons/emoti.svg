@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260" fill="none" mask="" stroke="#1276FF">
+    <g id="face" stroke-width="11">
+        <circle cx="130" cy="130" r="124.5"/>
+    </g>
+    <g id="lEye" transform="translate(57 81)" stroke-width="11">
+        <circle cx="22" cy="22" r="16.5" fill="none"/>
+    </g>
+    <g id="rEye" transform="translate(160 81)" stroke-width="11">
+        <circle cx="22" cy="22" r="16.5"/>
+    </g>
+    <path id="mouth" d="M125.488,354.941s12.478,17.46,35.256,17.46S196,354.941,196,354.941"  transform="translate(-31 -158.013)" stroke-linecap="round" stroke-width="11"/>
+</svg>

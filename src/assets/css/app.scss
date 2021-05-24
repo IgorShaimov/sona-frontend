@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~sweetalert2/src/sweetalert2';
+@import 'default';
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-VariableFont_wght.ttf') format("TrueType");
+}
+
+body {
+  font-family: 'Rubik' !important;
+}

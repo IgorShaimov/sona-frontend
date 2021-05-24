@@ -1,0 +1,51 @@
+@import "@/styles/variables.scss";
+
+.alarm-page {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  &.active {
+    top: 0;
+    transition: .3s top ease-in;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  height: 100vh;
+
+  .title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .desc {
+    font-size: 1rem;
+    padding: 0 3rem;
+  }
+
+  .alarm-icon {
+    svg {
+      width: 25px;
+      height: 25px;
+      stroke: #091F43;
+    }
+  }
+
+  .active-txt {
+    position: relative;
+    color: white;
+    z-index: 5;
+  }
+
+  .customize-btn {
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}

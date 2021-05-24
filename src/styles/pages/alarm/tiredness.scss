@@ -1,0 +1,39 @@
+@import "@/styles/variables.scss";
+
+.alarm-question-page {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  &.active {
+    left: 0;
+    transition: .3s left ease-in;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  .question-title {
+    color: #445C87;
+    font-weight: 600;
+  }
+
+  .back-icon {
+    left: 1rem;
+    width: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .customize-btn {
+    background: none;
+    border: 2px solid $sky-100;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}

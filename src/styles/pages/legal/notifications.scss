@@ -1,0 +1,42 @@
+@import "@/styles/variables.scss";
+
+.notifications-page {
+  &.active {
+    .page-title {
+      top: 20%;
+      transition: .5s all ease-in;
+      font-size: 2.75rem;
+    }
+    .page-content {
+      opacity: 1;
+      transition: .3s opacity ease;
+    }
+  }
+
+  .page-title {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+    font-size: 1.875rem;
+  }
+
+  .page-content {
+    opacity: 0;
+  }
+
+  .wrapper {
+    margin: 0 15px;
+    max-width: 500px;
+  }
+
+  .btn-allow-notifications {
+    border-radius: 26px;
+    border: 1px solid $sky-100;
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    max-width: 360px;
+  }
+}
